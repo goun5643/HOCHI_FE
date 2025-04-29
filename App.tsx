@@ -1,7 +1,7 @@
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
- * yyyyyydfdfdfdfd@@@@111fgfgf
+ * yyyyyydfdfdfdfd@@@@111fgfgfadasdasasd
  * @format
  */
 
