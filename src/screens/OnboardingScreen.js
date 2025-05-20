@@ -13,7 +13,7 @@ export default function OnboardingScreen() {
     const navigation = useNavigation();
 
     const handleKakaoLogin = () => {
-        Alert.alert('카카오 로그인 클릭!');
+       navigation.navigate('KakaoScreen');
     };
 
     const handleGuestLogin = () => {

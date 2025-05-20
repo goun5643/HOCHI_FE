@@ -11,6 +11,7 @@ import FavoriteScreen from './screens/FavoriteScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import RecordScreen from './screens/RecordScreen';
 import DetailScreen from './screens/DetailScreen';
+import KakaoScreen from './screens/KakaoScreen';
 
 enableScreens();
 
@@ -35,6 +36,7 @@ export default function App() {
                 <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
                 <Stack.Screen name="RecordScreen" component={RecordScreen} />
                 <Stack.Screen name="DetailScreen" component={DetailScreen} />
+                <Stack.Screen name="KakaoScreen" component={KakaoScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );
