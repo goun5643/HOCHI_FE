@@ -58,13 +58,15 @@ const styles = StyleSheet.create({
     },
     title: {
         color: '#0E66C0',
-        fontSize: 28,
+        fontSize: 43,
         fontWeight: 'bold',
         marginBottom: 10,
+        top: 65,
     },
     subtitle: {
         color: '#000',
         fontSize: 18,
+        top: 121,
     },
     flexSpacer: {
         flex: 1,

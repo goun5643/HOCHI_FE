@@ -6,7 +6,7 @@ const SplashScreen = ({ navigation }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       navigation.replace('OnboardingScreen');
-    }, 3000); // 3초 후 자동 이동
+    }, 500); // 3초 후 자동 이동
 
     return () => clearTimeout(timeout);
   }, [navigation]);
