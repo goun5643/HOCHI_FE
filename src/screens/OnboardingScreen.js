@@ -5,16 +5,19 @@ import {
     StyleSheet,
     TouchableOpacity,
     Alert,
-    Image
+    Image,
 } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 export default function OnboardingScreen() {
+    const navigation = useNavigation();
+
     const handleKakaoLogin = () => {
         Alert.alert('카카오 로그인 클릭!');
     };
 
     const handleGuestLogin = () => {
-        Alert.alert('비회원 로그인 클릭!');
+        navigation.navigate('HomeScreen');
     };
 
     return (
@@ -33,7 +36,7 @@ export default function OnboardingScreen() {
                 {/* 카카오 이미지 버튼 */}
                 <TouchableOpacity onPress={handleKakaoLogin}>
                     <Image
-                        source={require('../assets/images/kakao.png')} // 경로 꼭 확인!
+                        source={require('../assets/images/kakao.png')} // 이미지 경로 정확히!
                         style={styles.kakaoImage}
                         resizeMode="contain"
                     />
@@ -58,13 +61,15 @@ const styles = StyleSheet.create({
     },
     title: {
         color: '#0E66C0',
-        fontSize: 28,
+        fontSize: 43,
         fontWeight: 'bold',
         marginBottom: 10,
+        top: 65,
     },
     subtitle: {
         color: '#000',
         fontSize: 18,
+        top: 121,
     },
     flexSpacer: {
         flex: 1,
