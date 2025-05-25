@@ -1,23 +1,15 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
-import { WebView } from 'react-native-webview';
+import { View, Text, StyleSheet } from 'react-native';
 
 export default function HomeScreen() {
     return (
         <View style={styles.container}>
-            <WebView
-                source={{ uri: 'https://map.kakao.com/' }}
-                style={styles.webview}
-            />
+            <Text style={styles.text}>Home Screen</Text>
         </View>
     );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-    },
-    webview: {
-        flex: 1,
-    },
+    container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
+    text: { fontSize: 22 }
 });
