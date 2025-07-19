@@ -12,6 +12,7 @@ import ProfileScreen from './screens/ProfileScreen';
 import RecordScreen from './screens/RecordScreen';
 import DetailScreen from './screens/DetailScreen';
 import KakaoScreen from './screens/KakaoScreen';
+import GuestLoginScreen from './screens/GuestLoginScreen';
 
 enableScreens();
 
@@ -37,6 +38,7 @@ export default function App() {
                 <Stack.Screen name="RecordScreen" component={RecordScreen} />
                 <Stack.Screen name="DetailScreen" component={DetailScreen} />
                 <Stack.Screen name="KakaoScreen" component={KakaoScreen} />
+                <Stack.Screen name="GuestLoginScreen" component={GuestLoginScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );

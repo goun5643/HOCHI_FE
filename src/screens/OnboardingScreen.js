@@ -1,3 +1,5 @@
+// screens/OnboardingScreen.js
+
 import React from 'react';
 import {
     View,
@@ -12,30 +14,26 @@ export default function OnboardingScreen() {
     const navigation = useNavigation();
 
     const handleKakaoLogin = () => {
-       navigation.navigate('KakaoScreen');
+        navigation.navigate('KakaoScreen');
     };
 
     const handleGuestLogin = () => {
-        navigation.navigate('HomeScreen');
+        navigation.navigate('GuestLoginScreen');
     };
 
     return (
         <View style={styles.container}>
-            {/* 상단 텍스트 */}
             <View style={styles.topTextContainer}>
                 <Text style={styles.title}>호서대의 위치 정보를 한 눈에 쏙!</Text>
                 <Text style={styles.subtitle}>호치에 오신 걸 환영해요</Text>
             </View>
 
-            {/* 빈 공간 */}
             <View style={styles.flexSpacer} />
 
-            {/* 하단 버튼들 */}
             <View style={styles.bottomContainer}>
-                {/* 카카오 이미지 버튼 */}
                 <TouchableOpacity onPress={handleKakaoLogin}>
                     <Image
-                        source={require('../assets/images/kakao.png')} // 이미지 경로 정확히!
+                        source={require('../assets/images/kakao.png')}
                         style={styles.kakaoImage}
                         resizeMode="contain"
                     />
@@ -50,14 +48,8 @@ export default function OnboardingScreen() {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        padding: 20,
-        backgroundColor: '#fff',
-    },
-    topTextContainer: {
-        marginTop: 60,
-    },
+    container: { flex: 1, padding: 20, backgroundColor: '#fff' },
+    topTextContainer: { marginTop: 60 },
     title: {
         color: '#0E66C0',
         fontSize: 43,
@@ -65,14 +57,8 @@ const styles = StyleSheet.create({
         marginBottom: 10,
         top: 65,
     },
-    subtitle: {
-        color: '#000',
-        fontSize: 18,
-        top: 121,
-    },
-    flexSpacer: {
-        flex: 1,
-    },
+    subtitle: { color: '#000', fontSize: 18, top: 121 },
+    flexSpacer: { flex: 1 },
     bottomContainer: {
         marginBottom: 40,
         alignItems: 'center',
